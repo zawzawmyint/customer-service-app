@@ -9,7 +9,7 @@ const tags = ["Getting started", "Custom domain", "Billing", "Templates"];
 const HelpCenter = () => {
   return (
     <div className="mb-14">
-      <div className="bg-[url('/images/help-center.jpg')] bg-cover bg-no-repeat  w-full h-full top-16 sticky left-0 ">
+      <div className="bg-[url('/images/help-center.jpg')] bg-cover bg-no-repeat  w-full h-full top-0 sticky left-0 ">
         <div className="backdrop-blur-sm">
           <KBHeader
             tags={tags}

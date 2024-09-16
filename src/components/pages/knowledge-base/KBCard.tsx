@@ -8,6 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { KnowledgeBase } from "@/lib/types/definitions";
+import Link from "next/link";
 
 const KBCard = ({ kb }: { kb: KnowledgeBase }) => {
   return (
@@ -20,7 +21,9 @@ const KBCard = ({ kb }: { kb: KnowledgeBase }) => {
         <p className="text-pretty">{kb.description}</p>
       </CardContent>
       <CardFooter>
-        <Button variant={"link"}>Read more...</Button>
+        <Link href={"knowledge-base"}>
+          <Button variant={"link"}>Read more...</Button>
+        </Link>
       </CardFooter>
     </Card>
   );

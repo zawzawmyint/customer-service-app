@@ -16,7 +16,7 @@ const links: { title: string; href: string }[] = [
     href: "/",
   },
   {
-    title: "HelpCenter",
+    title: "Help",
     href: "/help-center",
   },
   {

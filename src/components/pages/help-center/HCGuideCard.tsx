@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader } from "@/components/ui/card";
 import { Guide } from "@/lib/types/definitions";
+import Link from "next/link";
 
 const HCGuideCard = ({ guide }: { guide: Guide }) => {
   return (
@@ -10,10 +11,11 @@ const HCGuideCard = ({ guide }: { guide: Guide }) => {
           <div className="border-2 border-secondary-foreground rounded-full p-2">
             {guide.icon}
           </div>
-
-          <Button variant={"link"} className="text-base text-wrap text-start">
-            {guide.title}
-          </Button>
+          <Link href={guide.href}>
+            <Button variant={"link"} className="text-base text-wrap text-start">
+              {guide.title}
+            </Button>
+          </Link>
         </div>
       </CardHeader>
     </Card>

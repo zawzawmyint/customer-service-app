@@ -10,7 +10,7 @@ const aritcals = ["Getting started", "Custom domain", "Billing", "Templates"];
 const KnowledgeBase = () => {
   return (
     <div>
-      <div className="bg-[url('/images/knowledgebase.png')] bg-cover bg-no-repeat  w-full h-full top-16 sticky left-0 ">
+      <div className="bg-[url('/images/knowledgebase.png')] bg-cover bg-no-repeat  w-full h-full top-0 sticky left-0 ">
         <div className="backdrop-blur-sm">
           <KBHeader
             title="Knowledge base."

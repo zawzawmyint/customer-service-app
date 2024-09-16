@@ -1,3 +1,4 @@
+import Motion from "@/components/framer-motion/Motion";
 import { cn } from "@/lib/utils";
 import { Play, Star, StarIcon } from "lucide-react";
 import React from "react";
@@ -19,12 +20,14 @@ const AgentInfos = () => {
   return (
     <div className="space-y-5">
       {infos.map((info) => (
-        <AgentInfoItem
-          key={info.title}
-          icon={info.icon}
-          title={info.title}
-          desc={info.desc}
-        />
+        <Motion key={info.title}>
+          <AgentInfoItem
+            key={info.title}
+            icon={info.icon}
+            title={info.title}
+            desc={info.desc}
+          />
+        </Motion>
       ))}
     </div>
   );

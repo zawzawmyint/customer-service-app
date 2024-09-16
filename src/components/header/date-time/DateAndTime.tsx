@@ -25,7 +25,7 @@ const DateAndTime: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center gap-1 sm:flex-row text-primary">
+    <div className="flex flex-col items-center justify-center gap-1 sm:flex-row text-primary font-mono">
       <div className="font-semibold text-xs sm:text-sm">New York </div>
       <div className="font-semibold text-xs sm:text-sm">{time}</div>
     </div>

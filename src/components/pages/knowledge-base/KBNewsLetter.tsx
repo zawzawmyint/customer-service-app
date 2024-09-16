@@ -1,3 +1,4 @@
+import Motion from "@/components/framer-motion/Motion";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -36,7 +37,9 @@ const KBNewsLetter = () => {
               type="email"
               required
             />
-            <Button type="submit">Subscribe</Button>
+            <Motion>
+              <Button type="submit">Subscribe</Button>
+            </Motion>
           </div>
         </form>
         <div>

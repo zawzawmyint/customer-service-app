@@ -4,7 +4,9 @@ import React from "react";
 const Logo = () => {
   return (
     <Link href={"/"}>
-      <h1 className="font-bold text-primary text-base sm:text-lg">HelpCus</h1>
+      <h1 className="font-bold text-primary text-base sm:text-lg font-mono">
+        HelpCus
+      </h1>
     </Link>
   );
 };

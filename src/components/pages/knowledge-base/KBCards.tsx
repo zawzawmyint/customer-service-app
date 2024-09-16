@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import React from "react";
 import KBCard from "./KBCard";
+import Motion from "@/components/framer-motion/Motion";
 
 const kbCardItems = [
   {
@@ -52,7 +53,9 @@ const KBCards = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 bg-secondary p-3 sm:p-10">
       {kbCardItems.map((item) => (
-        <KBCard kb={item} key={item.title} />
+        <Motion key={item.title}>
+          <KBCard kb={item} key={item.title} />
+        </Motion>
       ))}
     </div>
   );
